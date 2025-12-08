@@ -14,6 +14,13 @@ on:
   pull_request:
     branches: [ master ]
 
+permissions:
+  # Ho aggiunto i permessi per vedere se non mi dà più l'errore "Resource not accessible by integration"
+  contents: write # Per pushare codice, tag, o rilasciare asset
+  
+  security-events: write 
+  
+
 jobs:
   build:
 
